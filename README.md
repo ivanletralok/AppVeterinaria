@@ -1,50 +1,26 @@
-# React + TypeScript + Vite
+# 🐾 Aplicación de Citas Veterinarias
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Bienvenido a la **Aplicación de Citas Veterinarias**. Esta aplicación permite a los usuarios reservar fácilmente citas para sus mascotas con veterinarios. Desarrollada con tecnologías modernas como TypeScript, Zustand, Tailwind CSS y React Hook Form, la aplicación es fácil de usar y eficiente.
 
-Currently, two official plugins are available:
+![Citas Veterinarias](src/assets/imgVeterinaria.png)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🛠️ Tecnologías Utilizadas
 
-## Expanding the ESLint configuration
+- **TypeScript** - Para el chequeo de tipos estático y una mejor experiencia de desarrollo.
+- **React Hooks** - Simplifica la lógica de los componentes con hooks como `useState` y `useEffect`.
+- **Zustand** - Solución ligera de gestión de estado con un patrón similar a Redux.
+- **Tailwind CSS** - Framework CSS de utilidad para una interfaz de usuario receptiva y personalizable.
+- **React Hook Form** - Maneja la validación y envío de formularios de manera sencilla.
+- **React Toastify** - Proporciona notificaciones personalizables y atractivas.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## 🚀 Funcionalidades
 
-- Configure the top-level `parserOptions` property like this:
+- 📅 **Reserva de Citas**: Agenda una cita para tu mascota con solo unos clics.
+- 🐾 **Gestión de Mascotas**: Administra los detalles de tus mascotas, como nombre, edad y más.
+- 📧 **Notificaciones**: Recibe notificaciones sobre tus citas y recordatorios a través de Toastify.
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## 📦 Instalación
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+1. Clona este repositorio: 
+   ```bash
+   git clone https://github.com/tuusuario/veterinary-appointment-app.git
