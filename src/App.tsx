@@ -7,7 +7,7 @@ import PatientList from './components/PatientList';
 function App() {
 	return (
 		<>
-			<div className='container mx-auto mt-15'>
+			<div className='container mx-auto mt-6'>
 				<h1 className='font-black text-4xl text-center md:w-2/3 md:mx-auto'>
 					Seguiemiento de Pacientes {''}
 					<span className='text-indigo-700'>Veterinaria</span>

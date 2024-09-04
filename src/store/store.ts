@@ -26,7 +26,6 @@ export const usePatienteStore = create<PatientStore>((set) => ({
 	},
 
 	updatePatient: (patient: Patient) => {
-		console.log('updatePatient', patient);
 		set((state) => ({
 			patients: state.patients.map((p) =>
 				p.id === patient.id ? { ...p, ...patient } : p
